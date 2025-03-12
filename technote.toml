@@ -13,11 +13,10 @@ license.id = "CC-BY-4.0"
 state = "draft"
 
 [[technote.authors]]
-name.given = "Manuel"
-name.family = "Gomez Jimenez"
 internal_id = "gomezm"
 
+name = {given = "Manuel", family = "Gomez Jimenez"}
 [[technote.authors.affiliations]]
-name = ""
-internal_id = ""
-address = ""
+name = "NSF NOIRLab"
+internal_id = "NOIRLabC"
+address = "Casilla 603, La Serena, Chile"
