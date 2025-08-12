@@ -10,7 +10,7 @@ Introduction
 ============
 
 .. note::
-   **Eyepiece observations with the Auxiliary Telescope (AuxTel) require prior approval from SITCOM Management and XXXXXX.**
+   **Eyepiece observations with the Auxiliary Telescope (AuxTel) require prior approval from XXXXXX.**
 
 .. warning::
    Mandatory Personal Protective Equipment (PPE) required during eyepiece-based observations:
@@ -64,8 +64,7 @@ Procedure - Starting Observations
    **Please maintain a safe distance from the telescope and dome at all times, and especially when the telescope is moving.**
 
 #. **Eyepiece installation:**
-   The eyepiece is stored in its box inside Brian Stalder's locker, at the entrance of the main building. 
-   **[We should identify a definitive storage location within AuxTel].**
+   The eyepiece is stored in its labelled box, inside the spare part cabinet in the first floor of the AuxTel building. 
    Remove the plastic cover from the Nasmyth port #1 black tube, and carefully insert the eyepiece into the slot.
    While holding the eyepiece with one hand, tighten the two screws between the tube and the eyepiece with the other, securing the eyepiece.
    
@@ -73,8 +72,6 @@ Procedure - Starting Observations
       :width: 500px
  
    Figure 3: AuxTel Nasmyth Rotator port #1.
-
-   **[Insert Picture of the eyepiece installed with the screws here.]**
 
 #. **Tertiary mirror (M3) manual positioning:**
    The M3 motor is malfunctioning, and the positioning has to be made manually until the motor is replaced by the Electronics Group. 
@@ -104,10 +101,10 @@ Procedure - Starting Observations
 
 #. Before moving the telescope and dome, carefully inspect that there are no objects or people in the way.
 
-#. Initialize the AuxTel telescope, dome, and shutters.
-   **[Consider adding instructions on how to operate AuxTel, or clarify that this task will be performed by experienced personnel or OS.]**
-
-#. Slew to a target once all systems are ready for operations.
+#. **The following tasks must be performed by experienced personnel or an OS.** 
+   Initialize the AuxTel telescope, dome, and shutters. 
+   Slew to a target once all systems are ready for operations.
+   auxtel/track_target.py can be used for this in ATQueue, with different options: slew_icrs to RA/Dec coordinates, slew_icrs to an object name, or slew_planet to a Solar System planet.
 
 #. Once the telescope and dome are in position, you can begin observing with the eyepiece.
    A black and metallic step stool is available on the second floor, should it be needed to reach the eyepiece comfortably.
@@ -124,8 +121,7 @@ Procedure - Ending Observations and Closure
 
 #. Once the telescope and dome are parked, and the corresponding CSCs are in ``STANDBY``, the eyepiece can be removed.
    While holding the eyepiece with one hand, loosen the two screws and carefully remove the eyepiece. 
-   Return the eyepiece to its box and store it inside Brian Stalder's locker. 
-   **[We should identify a definitive storage location within AuxTel].**
+   Return the eyepiece to its box and store it inside the spare part cabinet in the first floor of the AuxTel building. 
 
 #. **M3 manual positioning:**
    Do not forget to put the M3 back to LATISS, following the same procedure as in the previous section.
@@ -134,9 +130,11 @@ Procedure - Ending Observations and Closure
 
 #. Close the Safety Gate, and pull the black handle to the right to lock it.
 
-#. Press the lock button. A click sound will be heard, engaging the lock.
+#. Press the lock button. 
+   A click sound will be heard, engaging the lock.
 
-#. In the AT Control Cabinet, press the *Safety Gate Bypass* button to activate the Safety Gate Interlock.
+#. In the AT Control Cabinet, press the *Safety Gate Bypass* button to activate the Safety Gate Interlock. 
+   The button will pop-out.
 
 #. Close the door of the AuxTel building on your way out.
 
