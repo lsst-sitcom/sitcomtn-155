@@ -30,7 +30,7 @@ Introduction
 
    **Fall hazard** on the telescope floor. **Please be aware of your surroundings while walking on the second floor of the telescope building, especially during nighttime.**
 
-   **Entrapment hazard** with the telescope structure and dome. **Please maintain a safe distance from the telescope mount.**
+   **Entrapment hazard** with the telescope structure and dome. **Please maintain a safe distance from the telescope mount and from the mount.**
 
    **Electrical hazard** with the dome slip-ring. **Please maintain a safe distance from the dome.**
    
