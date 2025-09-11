@@ -10,7 +10,7 @@ Introduction
 ============
 
 .. note::
-   **Eyepiece observations with the Auxiliary Telescope (AuxTel) require prior approval from XXXXXX.**
+   **Eyepiece observations with the Auxiliary Telescope (AuxTel) require prior approval from Kevin Reil, Sandrine Thomas or Roberto Tighe.**
 
 .. warning::
    Mandatory Personal Protective Equipment (PPE) required during eyepiece-based observations:
@@ -37,7 +37,7 @@ Introduction
 Procedure - Starting Observations
 =================================
 
-#. **Prior authorization for AuxTel eyepiece observations from SITCOM management is mandatory.**
+#. **Prior authorization for AuxTel eyepiece observations from Kevin Reil, Sandrine Thomas or Roberto Tighe is mandatory.**
 
 #. Ensure the mandatory PPE is worn before entering the AuxTel building.
 
@@ -113,6 +113,9 @@ Procedure - Starting Observations
       :width: 500px
  
    Figure 7: Step stool available in the second floor.
+
+#. You can slide the eyepiece in and out to focus during observations. 
+   In addition, two other screws in the lower part of the tube, when loosened, allow the entire tube to move, providing a greater focusing range.
 
 Procedure - Ending Observations and Closure
 ===========================================
