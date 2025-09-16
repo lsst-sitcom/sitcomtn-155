@@ -44,19 +44,16 @@ Procedure - Starting Observations
 #. Post a message in the Slack channels *summit-auxtel* and *summit-announce* communicating that you are about to start eyepiece-based observations with AuxTel.
    Additionally, inform the Observing Specialist (OS) on-duty about this.
 
-#. Inside the AuxTel building, on the first floor, push the *Safety Gate Bypass* button on the ATMCS/Pneumatics (labeled AT Control Cabinet).
-      
-   .. figure:: ./_static/IMG_4687.JPG
-      :width: 500px
+#. Confirm with the OS on-duty that all ATMCS and LATISS CSCs are in STANDBY. 
+   This will ensure no remote operations can be performed and that the ATMCS CSC does not go into a fault mode when re-positioning the M3.
 
-   Figure 1: Safety Gate Bypass activation button.
-
-#. Go to the Safety Gate, and press the *Release* button. A click sound will be heard, releasing the mechanism that allows the door to be opened.
+#. Inside the AuxTel building, go to the Safety Gate, and press the *Release* button. A click sound will be heard, releasing the mechanism that allows the door to be opened.
+   **Be aware that opening the Safety Gate will trigger the interlock, disabling all telescope and dome movement.**
 
    .. figure:: ./_static/IMG_4685.JPG
       :width: 500px    
  
-   Figure 2: Safety Gate inside the first floor of the AuxTel building.   
+   Figure 1: Safety Gate inside the first floor of the AuxTel building.   
 
 #. Push the black handle of the door to the left, and then open the door.
 
@@ -71,15 +68,15 @@ Procedure - Starting Observations
    .. figure:: ./_static/IMG_4688.JPG
       :width: 500px
  
-   Figure 3: AuxTel Nasmyth Rotator port #1.
+   Figure 2: AuxTel Nasmyth Rotator port #1.
 
 #. **Tertiary mirror (M3) manual positioning:**
    The M3 motor is malfunctioning, and the positioning has to be made manually until the motor is replaced by the Electronics Group. 
    **2 people are needed for this procedure:**
    
-   #. Identify the AT Pneumatics Box, beneath the telescope (see Figure 4 for reference), and open it using a screwdriver.
-   #. Identify the M3 Indexer hose, and with the help of a screwdriver, depress the blue button highlighted in Figure 5.
-   #. While one person holds the button depressed, the other one will have to manually rotate the M3 rotating table 180º (see Figure 6).
+   #. Identify the AT Pneumatics Box, beneath the telescope (see Figure 3 for reference), and open it using a screwdriver.
+   #. Identify the M3 Indexer hose, and with the help of a screwdriver, depress the blue button highlighted in Figure 4.
+   #. While one person holds the button depressed, the other one will have to manually rotate the M3 rotating table 180º (see Figure 5).
    #. Once the M3 is in position, the blue button in the AT Pneumatics Box can be un-pressed. 
    #. A slight manual adjustment will be needed in M3, until the piston gets inserted (producing a sound during the insertion).
       This is important, since once the piston is engaged, the rotary table will be locked.
@@ -87,19 +84,35 @@ Procedure - Starting Observations
    .. figure:: ./_static/IMG_4722.JPG
       :width: 500px
 
-   Figure 4: AT Pneumatics Box.
+   Figure 3: AT Pneumatics Box.
    
    .. figure:: ./_static/IMG_4723.JPG
       :width: 500px
  
-   Figure 5: Festo valve button to be depressed, highlighted with a red circle.
+   Figure 4: Festo valve button to be depressed, highlighted with a red circle. 
+   Make sure it is the button under the M3 indexer line, highlighted with a red square.
 
    .. figure:: ./_static/IMG_4724.JPG
       :width: 500px
  
-   Figure 6: M3 rotating table.
+   Figure 5: M3 rotating table.
 
 #. Before moving the telescope and dome, carefully inspect that there are no objects or people in the way.
+
+#. Go down to the first floor, close the Safety Gate and pull the black handle to the right to lock it.
+
+#. Press the lock button. 
+   A click sound will be heard, engaging the lock.
+
+#. Push the *Safety Gate Bypass* button on the ATMCS/Pneumatics (labeled AT Control Cabinet).
+   This action will bypass the interlock that is triggered when the safety door is opened.
+      
+   .. figure:: ./_static/IMG_4687.JPG
+      :width: 500px
+
+   Figure 6: Safety Gate Bypass activation button.
+
+#. Repeat steps 5 and 6 to release the Safety Gate and open it.
 
 #. **The following tasks must be performed by experienced personnel or an OS.** 
    Initialize the AuxTel telescope, dome, and shutters. 
@@ -126,7 +139,7 @@ Procedure - Ending Observations and Closure
    While holding the eyepiece with one hand, loosen the two screws and carefully remove the eyepiece. 
    Return the eyepiece to its box and store it inside the spare part cabinet in the first floor of the AuxTel building. 
 
-#. **M3 manual positioning:**
+#. **M3 manual positioning (2 people are needed for this procedure):**
    Do not forget to put the M3 back to LATISS, following the same procedure as in the previous section.
 
 #. Go downstairs to the first floor. 
