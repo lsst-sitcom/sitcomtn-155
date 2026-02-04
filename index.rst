@@ -34,6 +34,9 @@ Introduction
 
    **Electrical hazard** with the dome slip-ring. **Please maintain a safe distance from the dome.**
    
+.. note::
+   **Two people are needed for this procedure.**
+
 Procedure - Starting Observations
 =================================
 
@@ -49,34 +52,49 @@ Procedure - Starting Observations
 
 #. Inside the AuxTel building, go to the Safety Gate, and press the *Release* button. A click sound will be heard, releasing the mechanism that allows the door to be opened.
    **Be aware that opening the Safety Gate will trigger the interlock, disabling all telescope and dome movement.**
+   For additional information, you can find the Safety Gate Procedure at this link: 
+   
+   https://obs-ops.lsst.io/Safety/Safety-Systems/Safety-Gate-Procedures.html
 
    .. figure:: ./_static/IMG_4685.JPG
       :width: 500px    
  
-   Figure 1: Safety Gate inside the first floor of the AuxTel building.   
+   *Figure 1: Safety Gate inside the first floor of the AuxTel building.*   
 
 #. Push the black handle of the door to the left, and then open the door.
 
-#. Go up to the second floor. 
+#. Go up to the second floor and group the visitors at the exact opposite of the stairs, between the calibration bench and the workbenches (see Figure 3).
+   **Block the stairs to avoid fall hazard.**
    **Please maintain a safe distance from the telescope and dome at all times, and especially when the telescope is moving.**
+
+   .. figure:: ./_static/IMG_5639.JPG
+      :width: 500px    
+ 
+   *Figure 2: Block the stairs to avoid fall hazard.*
+
+   .. figure:: ./_static/IMG_5640.JPG
+      :width: 500px    
+ 
+   *Figure 3: Group the people at the exact opposite of the stairs.*
 
 #. **Eyepiece installation:**
    The eyepiece is stored in its labelled box, inside the spare part cabinet in the first floor of the AuxTel building. 
    Remove the plastic cover from the Nasmyth port #1 black tube, and carefully insert the eyepiece into the slot.
-   While holding the eyepiece with one hand, tighten the two screws between the tube and the eyepiece with the other, securing the eyepiece.
+   While holding the eyepiece with one hand, tighten the two upper screws (highlighted in blue in Figure 4) between the tube and the eyepiece with the other, securing the eyepiece.
+   The other two screws in the lower part of the tube (highlighted in red in Figure 4), when loosened, allow the entire tube to move, providing a greater focusing range.
    
-   .. figure:: ./_static/IMG_4688.JPG
+   .. figure:: ./_static/IMG_5642.JPG
       :width: 500px
  
-   Figure 2: AuxTel Nasmyth Rotator port #1.
+   *Figure 4: AuxTel Nasmyth Rotator port #1 with the eyepiece.*
 
 #. **Tertiary mirror (M3) manual positioning:**
    The M3 motor is malfunctioning, and the positioning has to be made manually until the motor is replaced by the Electronics Group. 
-   **2 people are needed for this procedure:**
+   **Two people are needed for this procedure:**
    
-   #. Identify the AT Pneumatics Box, beneath the telescope (see Figure 3 for reference), and open it using a screwdriver.
-   #. Identify the M3 Indexer hose, and with the help of a screwdriver, depress the blue button highlighted in Figure 4.
-   #. While one person holds the button depressed, the other one will have to manually rotate the M3 rotating table 180º (see Figure 5).
+   #. Identify the AT Pneumatics Box, beneath the telescope (see Figure 5 for reference), and open it using a screwdriver.
+   #. Identify the M3 Indexer hose, and with the help of a screwdriver, depress the blue button highlighted in Figure 6.
+   #. While one person holds the button depressed, the other one will have to manually rotate the M3 rotating table 180º (see Figure 7).
    #. Once the M3 is in position, the blue button in the AT Pneumatics Box can be un-pressed. 
    #. A slight manual adjustment will be needed in M3, until the piston gets inserted (producing a sound during the insertion).
       This is important, since once the piston is engaged, the rotary table will be locked.
@@ -84,18 +102,18 @@ Procedure - Starting Observations
    .. figure:: ./_static/IMG_4722.JPG
       :width: 500px
 
-   Figure 3: AT Pneumatics Box.
+   *Figure 5: AT Pneumatics Box.*
    
    .. figure:: ./_static/IMG_4723.JPG
       :width: 500px
  
-   Figure 4: Festo valve button to be depressed, highlighted with a red circle. 
-   Make sure it is the button under the M3 indexer line, highlighted with a red square.
+   *Figure 6: Festo valve button to be depressed, highlighted with a red circle.* 
+   *Make sure it is the button under the M3 indexer line, highlighted with a red square.*
 
    .. figure:: ./_static/IMG_4724.JPG
       :width: 500px
  
-   Figure 5: M3 rotating table.
+   *Figure 7: M3 rotating table.*
 
 #. Before moving the telescope and dome, carefully inspect that there are no objects or people in the way.
 
@@ -110,25 +128,42 @@ Procedure - Starting Observations
    .. figure:: ./_static/IMG_4687.JPG
       :width: 500px
 
-   Figure 6: Safety Gate Bypass activation button.
+   *Figure 8: Safety Gate Bypass activation button.*
 
 #. Repeat steps 5 and 6 to release the Safety Gate and open it.
 
 #. **The following tasks must be performed by experienced personnel or an OS.** 
    Initialize the AuxTel telescope, dome, and shutters. 
    Slew to a target once all systems are ready for operations.
-   auxtel/track_target.py can be used for this in ATQueue, with different options: slew_icrs to RA/Dec coordinates, slew_icrs to an object name, or slew_planet to a Solar System planet.
-
+   auxtel/track_target.py can be used for this in ATQueue, with different options: 
+  
+   * Slew to RA/Dec coordinates, where RA is in decimal hours (not degrees!) and Dec is in decimal degrees.
+   
+   .. code-block:: yaml
+   
+      slew_icrs:
+         ra: 12.37
+         dec: -13.75
+   
+   * slew_icrs to an object name.
+   * slew_planet to a Solar System planet.
+ 
+   .. code-block:: yaml
+   
+      slew_planet:
+         planet_name: SATURN
+   
 #. Once the telescope and dome are in position, you can begin observing with the eyepiece.
    A black and metallic step stool is available on the second floor, should it be needed to reach the eyepiece comfortably.
    
    .. figure:: ./_static/IMG_4756.JPG
       :width: 500px
  
-   Figure 7: Step stool available in the second floor.
+   *Figure 9: Step stool available in the second floor.*
 
 #. You can slide the eyepiece in and out to focus during observations. 
-   In addition, two other screws in the lower part of the tube, when loosened, allow the entire tube to move, providing a greater focusing range.
+   For this, use the two screws in the lower part of the tube (highlighted in red Figure 4). 
+   When loosened, they allow the entire tube to move, providing a greater focusing range.
 
 Procedure - Ending Observations and Closure
 ===========================================
