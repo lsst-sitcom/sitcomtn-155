@@ -10,7 +10,7 @@ Introduction
 ============
 
 .. note::
-   **Eyepiece observations with the Auxiliary Telescope (AuxTel) require prior approval from Kevin Reil, Sandrine Thomas or Roberto Tighe.**
+   **Eyepiece observations with the Auxiliary Telescope (AuxTel) require prior approval from one of the following Summit Leadership: Kevin Reil, Sandrine Thomas or Roberto Tighe.**
 
 .. warning::
    Mandatory Personal Protective Equipment (PPE) required during eyepiece-based observations:
@@ -20,6 +20,7 @@ Introduction
    #. High-visibility vest or jacket.
    #. Cold weather gear.
    #. Flashlight.
+   #. Red flashlight.
 
 .. danger::
    This mode of observing with AuxTel requires personnel to be on the telescope floor while the telescope and dome are moving.
@@ -35,7 +36,11 @@ Introduction
    **Electrical hazard** with the dome slip-ring. **Please maintain a safe distance from the dome.**
    
 .. note::
-   **Two people are needed for this procedure.**
+   **Two staff members are needed to perform this procedure (visitors do not count).**
+
+.. note::
+   **During nighttime, all building lights in AuxTel must remain off once the shutter is open.** 
+   Please use flashlights (preferably red) with caution to avoid light pollution affecting other observatories on the summit.
 
 Procedure - Starting Observations
 =================================
@@ -78,7 +83,7 @@ Procedure - Starting Observations
    *Figure 3: Group the people at the exact opposite of the stairs.*
 
 #. **Eyepiece installation:**
-   The eyepiece is stored in its labelled box, inside the spare part cabinet in the first floor of the AuxTel building. 
+   The eyepiece is stored in its labelled box, inside the spare parts cabinet in the first floor of the AuxTel building. 
    Remove the plastic cover from the Nasmyth port #1 black tube, and carefully insert the eyepiece into the slot.
    While holding the eyepiece with one hand, tighten the two upper screws (highlighted in blue in Figure 4) between the tube and the eyepiece with the other, securing the eyepiece.
    The other two screws in the lower part of the tube (highlighted in red in Figure 4), when loosened, allow the entire tube to move, providing a greater focusing range.
@@ -90,7 +95,7 @@ Procedure - Starting Observations
 
 #. **Tertiary mirror (M3) manual positioning:**
    The M3 motor is malfunctioning, and the positioning has to be made manually until the motor is replaced by the Electronics Group. 
-   **Two people are needed for this procedure:**
+   **Two staff members are needed for this procedure:**
    
    #. Identify the AT Pneumatics Box, beneath the telescope (see Figure 5 for reference), and open it using a screwdriver.
    #. Identify the M3 Indexer hose, and with the help of a screwdriver, depress the blue button highlighted in Figure 6.
@@ -135,7 +140,7 @@ Procedure - Starting Observations
 #. **The following tasks must be performed by experienced personnel or an OS.** 
    Initialize the AuxTel telescope, dome, and shutters. 
    Slew to a target once all systems are ready for operations.
-   auxtel/track_target.py can be used for this in ATQueue, with different options: 
+   Auxtel/track_target.py can be used for this in ATQueue, with different options: 
   
    * Slew to RA/Dec coordinates, where RA is in decimal hours (not degrees!) and Dec is in decimal degrees.
    
@@ -152,7 +157,7 @@ Procedure - Starting Observations
    
       slew_planet:
          planet_name: SATURN
-   
+
 #. Once the telescope and dome are in position, you can begin observing with the eyepiece.
    A black and metallic step stool is available on the second floor, should it be needed to reach the eyepiece comfortably.
    
@@ -172,9 +177,9 @@ Procedure - Ending Observations and Closure
 
 #. Once the telescope and dome are parked, and the corresponding CSCs are in ``STANDBY``, the eyepiece can be removed.
    While holding the eyepiece with one hand, loosen the two screws and carefully remove the eyepiece. 
-   Return the eyepiece to its box and store it inside the spare part cabinet in the first floor of the AuxTel building. 
+   Return the eyepiece to its box and store it inside the spare parts cabinet in the first floor of the AuxTel building. 
 
-#. **M3 manual positioning (2 people are needed for this procedure):**
+#. **M3 manual positioning (two staff members are needed for this procedure):**
    Do not forget to put the M3 back to LATISS, following the same procedure as in the previous section.
 
 #. Go downstairs to the first floor. 
