@@ -55,6 +55,8 @@ Procedure - Starting Observations
 #. Confirm with the OS on-duty that all ATMCS and LATISS CSCs are in STANDBY. 
    This will ensure no remote operations can be performed and that the ATMCS CSC does not go into a fault mode when re-positioning the M3.
 
+#. Collect the eyepiece from its labelled box, inside the spare parts cabinet in the first floor of the AuxTel building.
+
 #. Inside the AuxTel building, go to the Safety Gate, and press the *Release* button. A click sound will be heard, releasing the mechanism that allows the door to be opened.
    **Be aware that opening the Safety Gate will trigger the interlock, disabling all telescope and dome movement.**
    For additional information, you can find the Safety Gate Procedure at this link: 
@@ -68,7 +70,7 @@ Procedure - Starting Observations
 
 #. Push the black handle of the door to the left, and then open the door.
 
-#. Go up to the second floor and group the visitors at the exact opposite of the stairs, between the calibration bench and the workbenches (see Figure 3).
+#. Go up to the second floor. If you have visitors in the dome, group the visitors at the exact opposite of the stairs, between the calibration bench and the workbenches (see Figure 3). However, we recommend that you do not bring visitors into the dome until after you have completed the eyepiece installation and brought ATCS and LATISS to enabled in the later steps.
    **Block the stairs to avoid fall hazard.**
    **Please maintain a safe distance from the telescope and dome at all times, and especially when the telescope is moving.**
 
@@ -137,8 +139,12 @@ Procedure - Starting Observations
 
 #. Repeat steps 5 and 6 to release the Safety Gate and open it.
 
+#. Confirm with experienced personnel or an OS that you can enable ATCS and LATISS with the gate opened. If you cannot, due to an interlock error, you need to turn the red emergency stop button and press the blue start button shown in Fig. 8. 
+
+#. You have cleared most hurdles and can now bring the visitors into the dome. Make sure they are safely out of the way of moving parts of the dome and telescope.
+
 #. **The following tasks must be performed by experienced personnel or an OS.** 
-   Initialize the AuxTel telescope, dome, and shutters. 
+   Initialize the AuxTel telescope, dome, and shutters.
    Slew to a target once all systems are ready for operations.
    Auxtel/track_target.py can be used for this in ATQueue, with different options: 
   
@@ -159,7 +165,8 @@ Procedure - Starting Observations
          planet_name: SATURN
 
 #. Once the telescope and dome are in position, you can begin observing with the eyepiece.
-   A black and metallic step stool is available on the second floor, should it be needed to reach the eyepiece comfortably.
+   A black and metallic step stool is available on the second floor, should it be needed to reach the eyepiece comfortably. 
+   A small step ladder is located on the first floor, if you need an intermediate step to reach the eyepiece comfortably.
    
    .. figure:: ./_static/IMG_4756.JPG
       :width: 500px
@@ -173,14 +180,11 @@ Procedure - Starting Observations
 Procedure - Ending Observations and Closure
 ===========================================
 
-#. Execute the *shutdown_all.py* script in the LOVE ScriptQueue. This script will park the telescope and dome.
+#. Execute the *shutdown.py* script in the LOVE ScriptQueue. This script will park the telescope and dome. (Note: if you are going to continue AuxTel observing after this, do not run the shutdown script. Just stop tracking and put the CSCs in ``STANDBY``.)
 
 #. Once the telescope and dome are parked, and the corresponding CSCs are in ``STANDBY``, the eyepiece can be removed.
    While holding the eyepiece with one hand, loosen the two screws and carefully remove the eyepiece. 
    Return the eyepiece to its box and store it inside the spare parts cabinet in the first floor of the AuxTel building. 
-
-#. **M3 manual positioning (two staff members are needed for this procedure):**
-   Do not forget to put the M3 back to LATISS, following the same procedure as in the previous section.
 
 #. Go downstairs to the first floor. 
 
@@ -191,6 +195,11 @@ Procedure - Ending Observations and Closure
 
 #. In the AT Control Cabinet, press the *Safety Gate Bypass* button to activate the Safety Gate Interlock. 
    The button will pop-out.
+
+#. **M3 manual positioning (two staff members are needed for this procedure):**
+   Now reopen the gate by pressing release, go back upstairs, and put the M3 back to LATISS, following the same procedure as in the previous section.
+
+#. Return to the ground floor, close the gate, and lock it.
 
 #. Close the door of the AuxTel building on your way out.
 
